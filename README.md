@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Demo
+
+Click on Link: [View Demo](https://main.d3630ako2gsfbp.amplifyapp.com/)
+
 ## Available Scripts
 
 In the project directory, you can run:
