@@ -78,7 +78,10 @@ const App = () => {
           <label>Models disponiveis: </label>
           {models.map((model) => {
             return (
-              <option key={generateUniqueId()} value={model}>{model}</option>
+              <div>
+                <span key={generateUniqueId()} >{model}</span>
+                <br></br>
+                </div>
             );
           })}
         </div>
