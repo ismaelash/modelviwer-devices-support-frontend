@@ -92,7 +92,6 @@ const App = () => {
       <br />
       <input onChange={(event) => setInputModel(event.target.value)} type="text" /><br />
       <button onClick={handleSearchForModel} >Buscar por modelo</button>
-      <button onClick={() => {window.close()}} >Close tab</button>
       <br />
       {inputModel &&
         <div>
