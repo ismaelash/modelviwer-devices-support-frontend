@@ -10,6 +10,7 @@ const App = () => {
   const [brandSelected, setBrandSelected] = useState("");
   const [inputModel, setInputModel] = useState("");
   const [modelAvailable, setModelAvailable] = useState(false);
+  const [showResult, setShowResult] = useState(false);
 
   useEffect(() => {
 
@@ -46,6 +47,7 @@ const App = () => {
   const handleSearchForModel = () => {
     console.log(inputModel);
     setBrandSelected(false);
+    setShowResult(false);
 
     axios.post(API_URL, {
       option: 5,
@@ -57,6 +59,8 @@ const App = () => {
       })
       .catch(function (error) {
         console.log(error);
+      }).finally(() => {
+        setShowResult(true);
       });
   }
 
@@ -93,7 +97,7 @@ const App = () => {
       <input onChange={(event) => setInputModel(event.target.value)} type="text" /><br />
       <button onClick={handleSearchForModel} >Buscar por modelo</button>
       <br />
-      {inputModel &&
+      {showResult &&
         <div>
           {modelAvailable ?
             <label>Modelo disponivel</label> :
