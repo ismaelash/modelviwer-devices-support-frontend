@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Demo
 
-Click on Link: [View Demo](https://main.d3630ako2gsfbp.amplifyapp.com/)
+Click on Link: [View Demo](https://modelviwer-devices-support.ismaelnascimento.com/)
 
 ## Available Scripts
 
